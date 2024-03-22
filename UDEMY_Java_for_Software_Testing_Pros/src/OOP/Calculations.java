@@ -2,11 +2,11 @@ package OOP;
 
 public class Calculations {
 
-	int num1 = 4;
-	int num2 = 3;
+	int num1;
+	int num2;
 	int sum, product;
 
-	void calculate() {  // function or method
+	void calculate(int num1, int num2) {  // function or method
 		sum = num1 + num2;
 		product = num1 * num2;
 
@@ -17,7 +17,9 @@ public class Calculations {
 	public static void main(String[] args) {
 		
 		Calculations cal = new Calculations();  // object instantiations
-		cal.calculate();
-		cal.calculate();
+		cal.calculate(3,2);
+		cal.calculate(5,5);
+		cal.calculate(9,22);
+	
 	}
 }
